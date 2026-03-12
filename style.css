@@ -117,3 +117,15 @@ button:hover { background-color: #7c4dff; }
     color: #ffffff;
     padding: 10px;
 }
+
+/* Remove as setinhas brancas dos campos de número (Chrome, Edge, Safari etc) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove as setinhas no Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
