@@ -68,4 +68,25 @@ button:hover { background-color: #7c4dff; }
 }
 
 .aprovado { background-color: #1b5e20; color: #a5d6a7; }
+
 .exame { background-color: #b71c1c; color: #ffcdd2; }
+/* Estilo da Assinatura */
+.assinatura {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #888888;
+    border-top: 1px solid #333; /* Uma linhazinha sutil para separar */
+    padding-top: 15px;
+}
+
+.assinatura a {
+    color: #7c4dff; /* O mesmo roxo do seu botão */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.assinatura a:hover {
+    color: #a5d6a7; /* Fica verde quando passa o mouse */
+    text-decoration: underline;
+}
