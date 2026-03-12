@@ -91,3 +91,29 @@ button:hover { background-color: #7c4dff; }
     color: #a5d6a7; /* Fica verde quando passa o mouse */
     text-decoration: underline;
 }
+
+/* Estilo para a caixa de seleção de matérias */
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a2a2a; /* Fundo escuro igual aos outros campos */
+    color: #ffffff; /* Texto branco */
+    border: 1px solid #444; /* Borda sutil */
+    border-radius: 6px; /* Cantos arredondados */
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Efeito roxo quando o usuário clica na caixa */
+.input-group select:focus {
+    border-color: #7c4dff; 
+}
+
+/* Cor do menu que cai (as opções) */
+.input-group select option {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: 10px;
+}
