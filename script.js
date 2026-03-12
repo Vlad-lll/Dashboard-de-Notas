@@ -14,21 +14,20 @@ function calcularMedia() {
     let notaAva = parseFloat(inputAva);
 
     // 4. Lógica de cálculo (adaptável para o formato de disciplinas EAD/Flex)
-    // Exemplo: Prova tem peso 7 e AVA tem peso 3.
     let mediaFinal = ((notaProva * 7) + (notaAva * 3)) / 10;
 
     // 5. Atualizando o HTML com o resultado
-    document.getElementById('valorMedia').innerText = mediaFinal.toFixed(1); // Deixa com 1 casa decimal
+    document.getElementById('valorMedia').innerText = mediaFinal.toFixed(1); 
     
     let statusDiv = document.getElementById('statusAluno');
     
-    // 6. Verificando se passou ou pegou exame (Média mínima 6.0)
-    if (mediaFinal >= 6.0) {
+    // 6. Verificando se passou ou pegou exame (Média mínima 7.0)
+    if (mediaFinal >= 7.0) {
         statusDiv.innerText = "Aprovado! 🎉";
-        statusDiv.className = "status aprovado"; // Aplica a classe CSS verde
+        statusDiv.className = "status aprovado"; 
     } else {
         statusDiv.innerText = "Exame! 📚";
-        statusDiv.className = "status exame"; // Aplica a classe CSS vermelha
+        statusDiv.className = "status exame"; 
     }
 
     // Mostra o card de resultado que estava escondido
